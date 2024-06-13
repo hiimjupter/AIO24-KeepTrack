@@ -1,0 +1,6 @@
+{
+  "sonarlint.connectedMode.project": {
+    "connectionId": "hiltonsonar",
+    "projectKey": "hiimjupter_AIO24-KeepTrack"
+  }
+}
