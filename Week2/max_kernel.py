@@ -8,10 +8,11 @@ def max_kernel(num_list, k):
         # Move i and move k to maintain the space
         k += 1
         output.append(max_number)
-    print(output)
+    return output
 
 
-# Test condition
+# Test case
+assert max_kernel([3, 4, 5, 1, -44], 3)
 num_list = [3, 4, 5, 1, -44, 5, 10, 12, 33, 1]
 k = 3
-max_kernel(num_list, k)
+print(max_kernel(num_list, k))
