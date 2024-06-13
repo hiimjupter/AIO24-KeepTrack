@@ -1,10 +1,8 @@
 def character_count(string):
     char_dict = {}
-    for _ in string:
-        if _ not in char_dict.keys():
-            char_dict[_] = 0
-        if _ in char_dict.keys():
-            char_dict[_] += 1
+    for char in string:
+        # Return value = 0 if not found key "{char}"
+        char_dict[char] = char_dict.get(char, 0) + 1
     return char_dict
 
 
