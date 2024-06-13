@@ -7,5 +7,6 @@ def character_count(string):
 
 
 # Test case
-string = 'Happiness'
+assert character_count("Baby") == {'B': 1, 'a': 1, 'b': 1, 'y': 1}
+string = 'smiles'
 print(character_count(string))
