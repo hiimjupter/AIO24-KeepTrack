@@ -31,6 +31,7 @@ def levenshtein_distance(token_1, token_2):
 
 
 # Test case
-source = 'yu'
-target = 'you'
+assert levenshtein_distance('hi', 'hello') == 4
+source = 'hola'
+target = 'hello'
 print(levenshtein_distance(source, target))
