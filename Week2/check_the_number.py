@@ -11,8 +11,8 @@ def check_the_number(n):
     return result
 
 
-n = 7
-assert check_the_number(n) == 'False'
+n = 4
+assert check_the_number(n) == 'True'
 
 n = 2
 results = check_the_number(n)
