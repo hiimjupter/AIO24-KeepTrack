@@ -17,4 +17,5 @@ def word_count(file_path):
 # Test case
 file_path = 'Week2/P1_data.txt'
 result = word_count(file_path)
-print(result['who'])
+assert result['who'] == 3
+print(result['man'])
