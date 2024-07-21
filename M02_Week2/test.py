@@ -28,5 +28,3 @@ def compute_eigenvalues_eigenvectors_manual(M):
 # Example matrix
 M = np.array([[4, 2], [1, 3]])
 eigenvalues, eigenvectors = compute_eigenvalues_eigenvectors_manual(M)
-
-eigenvalues, eigenvectors
