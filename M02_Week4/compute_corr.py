@@ -1,4 +1,8 @@
 import numpy as np
+import pandas as pd
+
+data = pd.read_csv(
+    "/Users/jupternguyen/Projects/EXT10004_AIO24/Homework/AIO24-KeepTrack/M02_Week4/advertising.csv")
 
 
 def compute_correlation(X, Y):
@@ -24,6 +28,25 @@ Y = np.asarray([4, 25, 121, 36, 16, 225, 81])
 computed_corr = compute_correlation(X, Y)
 expected_corr = 0.42
 
+# Question 4
 assert np.isclose(
     computed_corr, expected_corr), f"Result should be {expected_corr}"
 print("Test passed")
+
+
+# Question 5
+x = data['TV']
+y = data['Radio']
+corr_xy = compute_correlation(x, y)
+
+# print(corr_xy)
+
+
+# Question 6
+features = ['TV', 'Radio', 'Newspaper']
+for feature_1 in features:
+    for feature_2 in features:
+        corr_val = compute_correlation(
+            data[feature_1], data[feature_2])
+        print(
+            f'The correlation between {feature_1} and {feature_2} is: {corr_val}')
